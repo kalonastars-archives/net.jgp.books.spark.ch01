@@ -35,7 +35,7 @@ public class CsvToDataframeApp {
     // dataframe
     Dataset<Row> df = spark.read().format("csv")
         .option("header", "true")
-        .load("data/books.csv");
+        .load("net.jgp.books.spark.ch01/data/books.csv");
 
     // Shows at most 5 rows from the dataframe
     df.show(5);
